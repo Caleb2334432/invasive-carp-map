@@ -1,13 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invasive Carp Map</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invasive Carp Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Invasive Carp Presence by Year</h1>
+    <label for="year">Select Year:</label>
+    <select id="year">
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
+    <div class="map-container">
+      <img src="image.png" alt="Illinois Waterway Map" class="map-image" />
+      <div class="region region1" data-regions="2017,2018,2019,2020,2021,2022,2023,2024,2025"></div>
+      <div class="region region2" data-regions="2020,2021,2022,2023,2024,2025"></div>
+      <div class="region region3" data-regions="2020,2021,2022,2023,2024,2025"></div>
+      <div class="region region4" data-regions="2023,2024,2025"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
